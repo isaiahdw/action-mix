@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sh -c "mix $*"
+sh -c "HEX_HTTP_CONCURRENCY=1 mix $*"
