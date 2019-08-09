@@ -13,6 +13,7 @@ ARG MIX_HOME=/.mix
 ENV MIX_HOME=$MIX_HOME
 ARG MIX_ENV=dev
 ENV MIX_ENV=$MIX_ENV
+ENV HEX_HTTP_CONCURRENCY=1
 
 RUN mix local.rebar --force
 RUN mix local.hex --force
